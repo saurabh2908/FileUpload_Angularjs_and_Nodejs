@@ -1,0 +1,17 @@
+{
+  "name": "public",
+  "description": "",
+  "main": "",
+  "authors": [
+    "saurabh singh"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
