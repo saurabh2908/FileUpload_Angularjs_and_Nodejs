@@ -6,6 +6,11 @@ const multer = require('multer');
 app.use(express.static('public'));
 app.use(bodyParser.urlencoded({extended:false}));
 app.use(bodyParser.json());
+
+
+//-----------------------------------multer code starts from here---------------------------------------------------------//
+
+
 var storage = multer.diskStorage({
     destination: function (req, file, cb) {
       console.log('Going to Store the Data in Disk');
@@ -34,6 +39,8 @@ app.post('/upload',(request, response,next)=>{
         response.json({'msg':'File Uploaded ....'});
       }
 })
+
+//--------------------------------multer code ended here ------------------------------------------------------------------//
 app.listen(3000,()=>{
   console.log('Server Started...');
 })
